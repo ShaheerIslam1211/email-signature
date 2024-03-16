@@ -1,0 +1,71 @@
+.register {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #dcdcdc;
+  padding: 30px;
+}
+.register__textBox {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* .register__btn {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+} */
+.register__google {
+  background-color: #4285f4;
+}
+.register div {
+  margin-top: 7px;
+}
+
+.background-color {
+  background-color: blue;
+}
+
+.input input,
+.input textarea {
+  background: none;
+  border: 0;
+  font-size: 15px;
+  padding: 5px 3px;
+  width: 100%;
+  font-family: var(--ws-font-family);
+}
+.signup-form-button {
+  width: 100%;
+  background-color: #f5467e !important;
+  margin-bottom: 25px;
+}
+
+.btn:not(.btn-text) {
+  color: var(--ws-white);
+}
+
+/* .btn {
+  border-radius: var(--ws-btns-border-radius);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 13px 18px 12px;
+  font-family: Mulish;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms;
+  user-select: none;
+  border: none;
+  outline: none;
+} */
