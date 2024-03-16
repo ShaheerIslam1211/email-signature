@@ -9,79 +9,70 @@ import React, { useEffect, useState } from 'react';
 import './Register.css';
 function Register() {
   return (
-    <div className='container-lg'>
-      <div className='row'>
-        <div className='col-6'>
-          <div>
-            <img
-              style={{
-                position: 'absolute',
-                height: '100%',
-                width: '100%',
-              }}
-              src={process.env.PUBLIC_URL + '/assets/SignupCardsImage.png'}
-              alt='imae'
-            />
-          </div>
-        </div>
-        <div className='col-6'>
-          <form
-            className='py-5'
-            id='account'
-            method='post'
+    <div className='signup'>
+      <img
+        className='signup-img'
+        src={process.env.PUBLIC_URL + '/assets/SignupCardsImage.png'}
+        alt='SignupCardsImage'
+      />
+      <form className='signup-form'>
+        <div
+          className='py-5 signup-form-inner-content'
+          id='account'
+          method='post'
+        >
+          <label
+            htmlFor='email'
+            className='form-label'
           >
-            <label
-              htmlFor='email'
-              className='form-label'
-            >
-              Email address
-            </label>
-            <input
-              type='email'
-              id='email'
-              className='form-control input'
-              autoComplete='username'
-              aria-required='true'
-              placeholder='Your Name'
-            />
-            <span
-              className='text-danger'
-              id='email-error'
-            ></span>
+            Email address
+          </label>
+          <input
+            type='email'
+            id='email'
+            className='form-control'
+            autoComplete='username'
+            aria-required='true'
+            placeholder='Your Name'
+          />
+          <span
+            className='text-danger'
+            id='email-error'
+          ></span>
 
-            <br></br>
-            <input
-              type='email'
-              id='email'
-              className='form-control'
-              autoComplete='username'
-              aria-required='true'
-              placeholder='Your Email'
-            />
-            <span
-              className='text-danger'
-              id='email-error'
-            ></span>
+          <br></br>
+          <input
+            type='email'
+            id='email'
+            className='form-control'
+            autoComplete='username'
+            aria-required='true'
+            placeholder='Your Email'
+          />
+          <span
+            className='text-danger'
+            id='email-error'
+          ></span>
 
-            <br></br>
+          <br></br>
 
-            <input
-              type='email'
-              id='email'
-              className='form-control'
-              autoComplete='username'
-              aria-required='true'
-              placeholder='Your Password'
-            />
+          <input
+            type='email'
+            id='email'
+            className='form-control'
+            autoComplete='username'
+            aria-required='true'
+            placeholder='Your Password'
+          />
 
-            <button
-              type='submit'
-              className='btn btn-primary mt-4'
-              value='Start Now'
-            />
-          </form>
+          <button
+            type='submit'
+            className='btn btn-primary mt-4 signup-form-button'
+          >
+            Start Now
+          </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 }
