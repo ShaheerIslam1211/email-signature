@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router>
       {/* {isSignInRoute && <NavBar />} */}
-      <div className='container mt-4'>
+      <div className='container'>
         <Routes>
           {routes.map((route, index) => (
             <Route

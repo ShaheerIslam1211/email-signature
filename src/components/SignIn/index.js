@@ -37,7 +37,7 @@ function SignIn() {
           alt='Login'
           className='logo'
         />
-        <p className='signin'>SignIn To WiseStamp</p>
+        <p className='signin'>Signin To EmailStamp</p>
 
         <div className='row'>
           <div className='col-12'>
